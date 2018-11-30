@@ -18,9 +18,9 @@ const numbers_ASCII = `
 
 const numbers = {
     0: `
-    ._.
-    |.|
-    |_|
-    `
+        ._.
+        |.|
+        |_|
+        `
 };
 

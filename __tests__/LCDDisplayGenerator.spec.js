@@ -10,24 +10,23 @@ describe("LCDDisplayGenerator", () => {
     });
 
     test("0 should return proper string", () => {
-        expect(() => {
-            LCDGenerator.generate(0)
+            expect(LCDGenerator.generate(0))
                 .toBe(` 
                 ._.
                 |.|
                 |_|
-       `)}
-        )
-    })
+       `)
+        }
+    );
 
     test("12 should return proper string", () => {
-        expect(()=> {
-            LCDGenerator(12)
-                .toBe(`
+        expect(LCDGenerator.generate(12))
+            .toBe(`
                 ... ._.
                 ..| ._|
                 ..| |_.
                 `)
-        })
-    })
+
+    });
+
 });
